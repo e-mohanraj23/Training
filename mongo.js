@@ -1,0 +1,14 @@
+const {saveStudent}= require('./schema.js');
+const {connection}=require('./connection.js');
+connection();
+saveStudent({htno:101,name:'mohan',tamil:94,english:98,maths:82,science:93,ss:98});
+saveStudent({htno:102,name:'manoj',tamil:54,english:68,maths:72,science:83,ss:70});
+saveStudent({htno:103,name:'kiran',tamil:44,english:98,maths:82,science:65,ss:90});
+saveStudent({htno:104,name:'kumar',tamil:97,english:68,maths:81,science:93,ss:98});
+saveStudent({htno:105,name:'siva',tamil:94,english:85,maths:92,science:100,ss:69});
+saveStudent({htno:106,name:'deepak',tamil:74,english:98,maths:84,science:93,ss:100});
+saveStudent({htno:107,name:'raj',tamil:74,english:98,maths:84,science:65,ss:100});
+saveStudent({htno:108,name:'sekar',tamil:33,english:98,maths:84,science:23,ss:78});
+saveStudent({htno:109,name:'bala',tamil:97,english:68,maths:56,science:93,ss:98});
+saveStudent({htno:110,name:'prabha',tamil:24,english:98,maths:48,science:93,ss:63});
+saveStudent({htno:111,name:'prasath',tamil:74,english:68,maths:84,science:93,ss:40});
