@@ -1,27 +1,27 @@
 marks=(htno,name,tamil,eng,maths,science,ss)=>{
-    marks=[tamil,eng,maths,science,ss];
-    htno=htno;
-    name=name;
-    tamil=tamil;
-    eng=eng;
-    maths=maths;
-    science=science;
-    ss=ss;
+    this.marks=[tamil,eng,maths,science,ss];
+    this.htno=htno;
+    this.name=name;
+    this.tamil=tamil;
+    this.eng=eng;
+    this.maths=maths;
+    this.science=science;
+    this.ss=ss;
     let failed,total=0;
-    console.log("Hallticket No:"+htno);
-    console.log("Name:"+name);
-    console.log("Tamil:"+tamil+" "+(tamil>=35?"P":"F"));
-    console.log("English:"+eng+" "+(eng>=35?"P":"F"));
-    console.log("Maths:"+maths+" "+(maths>=35?"P":"F"));
-    console.log("Science:"+science+" "+(science>=35?"P":"F"));
-    console.log("Social:"+ss+" "+(ss>=35?"P":"F"));
-    for(i in marks){
-        if(marks[i]<35){
+    console.log("Hallticket No:"+this.htno);
+    console.log("Name:"+this.name);
+    console.log("Tamil:"+this.tamil+" "+(this.tamil>=35?"P":"F"));
+    console.log("English:"+this.eng+" "+(this.eng>=35?"P":"F"));
+    console.log("Maths:"+this.maths+" "+(this.maths>=35?"P":"F"));
+    console.log("Science:"+this.science+" "+(this.science>=35?"P":"F"));
+    console.log("Social:"+this.ss+" "+(this.ss>=35?"P":"F"));
+    for(i in this.marks){
+        if(this.marks[i]<35){
             failed=true;
         }
-        total+=marks[i];
+        total+=this.marks[i];
     }
-    let tm=marks.length*100;
+    let tm=this.marks.length*100;
     let per=(total/tm)*100;
     
     if(!failed){
