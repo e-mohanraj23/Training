@@ -1,5 +1,5 @@
 const express = require('express');
-const {saveStudent,model} = require('./schema');
+const {saveStudent,model} = require('./schema.js');
 const {connection}=require('./connection.js');
 connection();
 const app = express();
