@@ -1,5 +1,5 @@
 let promise= new Promise((resolve,reject)=>{
-    if(false) resolve('resolved');
+    if(true) resolve('resolved');
     else reject('rejected');		
 });
 promise.then(res=>console.log("then"+res)

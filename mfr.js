@@ -4,11 +4,8 @@
 // const b= a.reduce((a,b)=>a+b,0)
 // console.log(b)
 
-// const a = { a: 1, b: 2, c: 3 };
-// const b = Object.entries(obj).map(([key, value]) => [key, value * 2])
-// const b = Object.entries(a).filter(([key, value]) => value>=2)
-// console.log(Object.fromEntries(b));
-// const sum = Object.entries(a).reduce((total, [key, value]) => {
-//   return total + value;
-// }, 0);
-// console.log(sum);
+const a = { a: 1, b: 2, c: 3 };
+const b =Object.fromEntries(Object.entries(a).map(([key, value]) => [key, value * 2]));
+const c =Object.fromEntries(Object.entries(a).filter(([key, value]) => value>=2));
+const d=Object.entries(a).reduce((total, [key, value]) => {return total + value;}, 0);
+console.log(d)
