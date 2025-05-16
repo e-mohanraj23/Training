@@ -1,0 +1,8 @@
+info: Info log
+error: Error log
+info: Info log {"timestamp":"2025-05-16T08:37:15.704Z"}
+error: Error log {"timestamp":"2025-05-16T08:37:15.705Z"}
+error: Error log {"timestamp":"2025-05-16T08:37:53.989Z"}
+warn: warning {"timestamp":"2025-05-16T08:38:43.852Z"}
+info: Info log {"timestamp":"2025-05-16T08:38:43.853Z"}
+error: Error log {"timestamp":"2025-05-16T08:38:43.853Z"}
