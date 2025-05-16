@@ -19,14 +19,13 @@ app.get('/fetch/:htno',async(req,res)=>{
     const id= req.params.htno;
     const student= await model.findOne({htno:id});
     if(student.result=="FAIL"){
-     const display= await model.findOne({htno:id},'-_id -__v -total -percentage');
+     const display=await model.findOne({htno:id},'-_id -__v -total -percentage');
      return res.status(200).json(display);
     }
     else{
       const display=await model.findOne({htno:id},'-_id -__v');
      return res.status(200).json(display);
     }
-    return res.status(200).json({student:student,message:"fetched"});
   } catch (error) {
   return res.status(500).json({result: false,message: error });
   }
